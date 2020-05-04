@@ -1,3 +1,19 @@
 @import 'variables';
 @import 'typography';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @import 'mobile';

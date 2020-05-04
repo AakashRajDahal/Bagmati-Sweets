@@ -5,5 +5,21 @@
 }
 
 /* Berkshire Google Font */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* CSS for Mobile */
 /*# sourceMappingURL=style.css.map */

@@ -1,361 +1,363 @@
 /* Navbar section */
-.mainHeader.topNav1{
+.mainHeader.topNav1 {
     margin-top: 40px;
-    nav{
-        .container{
+    nav {
+        .container {
             margin: auto 60px;
             display: flex;
         }
     }
-  }
-  .nav {
-      width: 100%;
-     height:45px;
-      line-height: 50px;
-      text-align: center;
-      z-index: 10000;
-      .container-nav{
-          margin:0 120px;
-          display: flex;
-          justify-content: space-between;
-      }
-  }
-  
-  .nav div.logo {
-      // float: left;
-      width: auto;
-      height: auto;
-      padding-left: 0px;
-  }
-  
-  .nav div.logo a {
-      img{
+}
+.nav {
+    width: 100%;
+    height: 75px;
+    line-height: 50px;
+    text-align: center;
+    z-index: 10000;
+    .container-nav {
+        margin: 0 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav div.logo {
+    // float: left;
+    width: auto;
+    height: auto;
+    padding-left: 0px;
+}
+
+.nav div.logo a {
+    img {
         width: 100%;
         height: auto;
-      }
-  }
-  
-  
-  .nav div.main_list ul {
-      width: 100%;
-  //    height:45px;
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
-  
-  .nav div.main_list ul li {
-      width: auto;
-      // height: 40px;
-      padding: 0;
-      // padding-left: 3rem;
-  }
-  
-  .nav div.main_list ul li a {
-      text-decoration: none;
-      color: black;
-      line-height: 65px;
-      font-size: 18px;
-      padding-left: 40px;
-    
-  }
-  
-  .nav div.main_list ul li a:hover {
-      color: Blue;
-  }
-  
-  
-  /* Home section */
-  
-  
-  .navTrigger {
-      display: none;
-  }
-  
-  .nav {
-      padding-top: 10px;
-      padding-bottom: 20px;
-      -webkit-transition: all 0.4s ease;
-      transition: all 0.4s ease;
+    }
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    //    height:45px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    // height: 40px;
+    padding: 0;
+    // padding-left: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: $primary;
+    line-height: 65px;
+    font-size: 18px;
+    padding-left: 40px;
+    button{
+        padding: 12px 24px;
+        border: none;
+      background-color: $primary;
+      color: white;
+      text-transform: uppercase;
+        
+    }
+}
+
+.nav div.main_list ul li a:hover {
+    color: white;
+}
+
+/* Home section */
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     //   background-color: #fff;
-      // position: fixed;
-      // top: 45px;
-  }
-  
-  
-  /* Media qurey section */
-  @media screen and (max-width:992px) {
-      .nav div.main_list ul li a {
-          font-size: 15px;
-          padding-left: 35px;
-      }
-      .nav  .container-nav{
-          margin: 0 60px;
-      }
-  }
-  
-  @media screen and (max-width:768px) {
-      .nav{
-          height: 30px;
-      }
-      .navTrigger {
-          display: block;
-      }
-      .nav div.logo {
-        a{
-          margin-right: 75px;
-          }
-      }
-      .nav div.main_list {
-          width: 100%;
-          height: 0;
-          overflow: hidden;
-      }
-      .nav div.show_list {
-          height: auto;
-          display: none;
-      }
-      .nav div.main_list ul {
-          flex-direction: column;
-          width: 100%;
-          height: 100vh;
-          right: 0;
-          left: 0;
-          bottom: 0;       
-          // background: rgba(2,147,170,0.9);
-          background: #fff;
-          /*same background color of navbar*/
-          // background-position: center top;
-      }
-      .nav div.main_list ul li {
-          width: 100%;
-          text-align: center;
-      }
-      .nav div.main_list ul li a {
-          text-align: center;
-          width: 100%;
-          font-size: 35px;
-          padding: 35px;
-      }
-      .nav div.media_button {
-          display: block;
-      }
-  }
-  
-  @media screen and (max-width:576px){
-      .nav  .container-nav{
-          margin: 0 30px;
-      }
-  }
-  
-  
-  /* Animation */
-  /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-  
-  .navTrigger {
-      cursor: pointer;
-      width: 30px;
-      height: 25px;
-      margin: 40px 0 0 0;
-      position: absolute;
-      right: 30px;
-      top: 20px;
-      bottom: 0;
-  }
-  // .navTrigger.active{
-  //     top: 0;
-  // }
-  .navTrigger i {
-      background-color: Blue;
-      border-radius: 2px;
-      content: '';
-      display: block;
-      width: 100%;
-      height: 4px;
-  }
-  
-  .navTrigger i:nth-child(1) {
-      -webkit-animation: outT 0.8s backwards;
-      animation: outT 0.8s backwards;
-      -webkit-animation-direction: reverse;
-      animation-direction: reverse;
-  }
-  
-  .navTrigger i:nth-child(2) {
-      margin: 5px 0;
-      -webkit-animation: outM 0.8s backwards;
-      animation: outM 0.8s backwards;
-      -webkit-animation-direction: reverse;
-      animation-direction: reverse;
-  }
-  
-  .navTrigger i:nth-child(3) {
-      -webkit-animation: outBtm 0.8s backwards;
-      animation: outBtm 0.8s backwards;
-      -webkit-animation-direction: reverse;
-      animation-direction: reverse;
-  }
-  
-  .navTrigger.active i:nth-child(1) {
-      -webkit-animation: inT 0.8s forwards;
-      animation: inT 0.8s forwards;
-  }
-  
-  .navTrigger.active i:nth-child(2) {
-      -webkit-animation: inM 0.8s forwards;
-      animation: inM 0.8s forwards;
-  }
-  
-  .navTrigger.active i:nth-child(3) {
-      -webkit-animation: inBtm 0.8s forwards;
-      animation: inBtm 0.8s forwards;
-  }
-  
-  @-webkit-keyframes inM {
-      50% {
-          -webkit-transform: rotate(0deg);
-      }
-      100% {
-          -webkit-transform: rotate(45deg);
-      }
-  }
-  
-  @keyframes inM {
-      50% {
-          transform: rotate(0deg);
-      }
-      100% {
-          transform: rotate(45deg);
-      }
-  }
-  
-  @-webkit-keyframes outM {
-      50% {
-          -webkit-transform: rotate(0deg);
-      }
-      100% {
-          -webkit-transform: rotate(45deg);
-      }
-  }
-  
-  @keyframes outM {
-      50% {
-          transform: rotate(0deg);
-      }
-      100% {
-          transform: rotate(45deg);
-      }
-  }
-  
-  @-webkit-keyframes inT {
-      0% {
-          -webkit-transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          -webkit-transform: translateY(9px) rotate(0deg);
-      }
-      100% {
-          -webkit-transform: translateY(9px) rotate(135deg);
-      }
-  }
-  
-  @keyframes inT {
-      0% {
-          transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          transform: translateY(9px) rotate(0deg);
-      }
-      100% {
-          transform: translateY(9px) rotate(135deg);
-      }
-  }
-  
-  @-webkit-keyframes outT {
-      0% {
-          -webkit-transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          -webkit-transform: translateY(9px) rotate(0deg);
-      }
-      100% {
-          -webkit-transform: translateY(9px) rotate(135deg);
-      }
-  }
-  
-  @keyframes outT {
-      0% {
-          transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          transform: translateY(9px) rotate(0deg);
-      }
-      100% {
-          transform: translateY(9px) rotate(135deg);
-      }
-  }
-  
-  @-webkit-keyframes inBtm {
-      0% {
-          -webkit-transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          -webkit-transform: translateY(-9px) rotate(0deg);
-      }
-      100% {
-          -webkit-transform: translateY(-9px) rotate(135deg);
-      }
-  }
-  
-  @keyframes inBtm {
-      0% {
-          transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          transform: translateY(-9px) rotate(0deg);
-      }
-      100% {
-          transform: translateY(-9px) rotate(135deg);
-      }
-  }
-  
-  @-webkit-keyframes outBtm {
-      0% {
-          -webkit-transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          -webkit-transform: translateY(-9px) rotate(0deg);
-      }
-      100% {
-          -webkit-transform: translateY(-9px) rotate(135deg);
-      }
-  }
-  
-  @keyframes outBtm {
-      0% {
-          transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-          transform: translateY(-9px) rotate(0deg);
-      }
-      100% {
-          transform: translateY(-9px) rotate(135deg);
-      }
-  }
-  
-  .myH2 {
-      text-align:center;
-      font-size: 4rem;
-  }
-  .myP {
-      text-align: justify;
-      padding-left:15%;
-      padding-right:15%;
-      font-size: 20px;
-  }
-  @media all and (max-width:700px){
-      .myP {
-          padding:2%;
-      }
-  }
+    // position: fixed;
+    // top: 45px;
+}
+
+/* Media qurey section */
+@media screen and (max-width: 992px) {
+    .nav div.main_list ul li a {
+        font-size: 15px;
+        padding-left: 35px;
+    }
+    .nav .container-nav {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        height: 30px;
+    }
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        a {
+            margin-right: 75px;
+        }
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        // background: rgba(2,147,170,0.9);
+        background: #fff;
+        /*same background color of navbar*/
+        // background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+        padding: 35px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav .container-nav {
+        margin: 0 30px;
+    }
+}
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: 40px 0 0 0;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    bottom: 0;
+}
+// .navTrigger.active{
+//     top: 0;
+// }
+.navTrigger i {
+    background-color: $primary;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+.myH2 {
+    text-align: center;
+    font-size: 4rem;
+}
+.myP {
+    text-align: justify;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}
+@media all and (max-width: 700px) {
+    .myP {
+        padding: 2%;
+    }
+}

@@ -223,8 +223,8 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: #f3f3f3;
-  color: #707070;
+  background-color: #000;
+  color: #fff;
 }
 
 .mainHeader .topNav,
@@ -247,14 +247,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 120px;
   line-height: 21px;
 }
 
 .mainHeader .topNav .side-1 .nav-item,
 .mainHeader .mainNav .side-1 .nav-item {
   font-size: 16px;
-  margin-right: 1em;
+  margin-right: 8rem;
 }
 
 .mainHeader .topNav .social-icons,
@@ -265,12 +264,19 @@ body {
 
 .mainHeader .topNav .social-icons i,
 .mainHeader .mainNav .social-icons i {
-  margin: 0 0.5em;
+  margin-left: 1.5em;
 }
 
 .mainHeader .topNav {
-  -webkit-box-shadow: 0px 2px 2px #cdcdcd;
-          box-shadow: 0px 2px 2px #cdcdcd;
+  padding: 0 140px;
+}
+
+.mainHeader .hr {
+  margin: 0 140px;
+  height: 1px;
+  border: none;
+  width: 100%;
+  background-color: gray;
 }
 
 /* Navbar section */
@@ -287,14 +293,14 @@ body {
 
 .nav {
   width: 100%;
-  height: 45px;
+  height: 75px;
   line-height: 50px;
   text-align: center;
   z-index: 10000;
 }
 
 .nav .container-nav {
-  margin: 0 120px;
+  margin: 0 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,14 +337,22 @@ body {
 
 .nav div.main_list ul li a {
   text-decoration: none;
-  color: black;
+  color: #fd5f00;
   line-height: 65px;
   font-size: 18px;
   padding-left: 40px;
 }
 
+.nav div.main_list ul li a button {
+  padding: 12px 24px;
+  border: none;
+  background-color: #fd5f00;
+  color: white;
+  text-transform: uppercase;
+}
+
 .nav div.main_list ul li a:hover {
-  color: Blue;
+  color: white;
 }
 
 /* Home section */
@@ -431,9 +445,9 @@ body {
 }
 
 .navTrigger i {
-  background-color: Blue;
+  background-color: #fd5f00;
   border-radius: 2px;
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 4px;

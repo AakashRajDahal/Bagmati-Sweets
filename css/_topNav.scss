@@ -63,6 +63,10 @@
       background-color: $primary;
       color: white;
       text-transform: uppercase;
+      &:hover{
+          color: $primary;
+          background-color: white;
+      }
         
     }
 }

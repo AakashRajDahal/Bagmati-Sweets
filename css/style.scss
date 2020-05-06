@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'typography';
+@import 'grid';
 
 * {
     margin: 0;
@@ -19,5 +20,5 @@ body {
 
 
 @import 'header';
- @import 'topNav';
+@import 'topNav';
 @import 'mobile';

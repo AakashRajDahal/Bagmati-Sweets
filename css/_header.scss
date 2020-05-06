@@ -5,8 +5,8 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: $light02;
-    color: $textColor;
+    background-color:#000;
+    color: #fff;
 
     .topNav,
     .mainNav {
@@ -18,37 +18,31 @@
         .side-1 {
             list-style: none;
             display: flex;
-            padding-left: 120px;
+            // padding-left: 120px;
             line-height: 21px;
             .nav-item {
                 font-size: 16px;
-                margin-right: 1em;
+                margin-right: 8rem;
             }
         }
         .social-icons {
             font-size: 20px;
             margin: 10px 0;
             i{
-                margin: 0 0.5em;
+                margin-left: 1.5em;
             }
-            // a
-            //     text-transform: uppercase;
-            //     background-color: Blue;
-            //     border: 1px solid #ffffff;
-            //     color: white;
-            //     padding: 4px 16px;
-            //     text-align: center;
-            //     text-decoration: none;
-            //     display: inline-block;
-            //     font-size: 15px;
-            //     cursor: pointer;
-            //     margin-right: 120px;
-            // }
+
         }
     }
     .topNav{
-        // border-bottom: 1px solid $textColor;
-
-box-shadow: 0px 2px 2px $light01;
+        padding: 0 140px;
+    //  border-bottom: 1px solid #cbcbcb;
+    }
+    .hr{
+        margin: 0 140px;
+        height: 1px;
+        border: none;
+        width: 100%;
+       background-color: gray;
     }
 }

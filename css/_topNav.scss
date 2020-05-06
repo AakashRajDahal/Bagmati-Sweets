@@ -12,13 +12,13 @@
 
 .nav {
     width: 100%;
+    height: 75px;
     line-height: 50px;
     text-align: center;
     z-index: 10000;
-    background-color: $black;
 
     .container-nav {
-        margin: 0 120px;
+        margin: 0 140px;
         display: flex;
         justify-content: space-between;
     }
@@ -38,7 +38,6 @@
     }
 }
 
-
 .nav div.main_list ul {
     width: 100%;
     //    height:45px;
@@ -57,20 +56,31 @@
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: black;
+    color: $primary;
     line-height: 65px;
     font-size: 18px;
     padding-left: 40px;
 
+    button {
+        padding: 12px 24px;
+        border: none;
+        background-color: $primary;
+        color: white;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $primary;
+            background-color: white;
+        }
+
+    }
 }
 
 .nav div.main_list ul li a:hover {
-    color: Blue;
+    color: white;
 }
 
-
 /* Home section */
-
 
 .navTrigger {
     display: none;
@@ -86,9 +96,8 @@
     // top: 45px;
 }
 
-
 /* Media qurey section */
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
     .nav div.main_list ul li a {
         font-size: 15px;
         padding-left: 35px;
@@ -99,7 +108,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .nav {
         height: 30px;
     }
@@ -155,12 +164,11 @@
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .nav .container-nav {
         margin: 0 30px;
     }
 }
-
 
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
@@ -180,9 +188,9 @@
 //     top: 0;
 // }
 .navTrigger i {
-    background-color: Blue;
+    background-color: $primary;
     border-radius: 2px;
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 4px;
@@ -389,7 +397,7 @@
     font-size: 20px;
 }
 
-@media all and (max-width:700px) {
+@media all and (max-width: 700px) {
     .myP {
         padding: 2%;
     }

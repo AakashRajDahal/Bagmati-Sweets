@@ -1,6 +1,7 @@
 /* Navbar section */
 .mainHeader.topNav1 {
     margin-top: 40px;
+
     nav {
         .container {
             margin: auto 60px;
@@ -8,12 +9,14 @@
         }
     }
 }
+
 .nav {
     width: 100%;
-    height: 75px;
+    height: 90px;
     line-height: 50px;
     text-align: center;
     z-index: 10000;
+
     .container-nav {
         margin: 0 140px;
         display: flex;
@@ -26,6 +29,7 @@
     width: auto;
     height: auto;
     padding-left: 0px;
+    margin-top: 0.5rem;
 }
 
 .nav div.logo a {
@@ -57,17 +61,20 @@
     line-height: 65px;
     font-size: 18px;
     padding-left: 40px;
-    button{
+
+    button {
         padding: 12px 24px;
         border: none;
-      background-color: $primary;
-      color: white;
-      text-transform: uppercase;
-      &:hover{
-          color: $primary;
-          background-color: white;
-      }
-        
+        background-color: $primary;
+        color: white;
+        text-transform: uppercase;
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($color: $primary, $amount: 10);
+        }
+
     }
 }
 
@@ -97,6 +104,7 @@
         font-size: 15px;
         padding-left: 35px;
     }
+
     .nav .container-nav {
         margin: 0 60px;
     }
@@ -106,23 +114,28 @@
     .nav {
         height: 30px;
     }
+
     .navTrigger {
         display: block;
     }
+
     .nav div.logo {
         a {
             margin-right: 75px;
         }
     }
+
     .nav div.main_list {
         width: 100%;
         height: 0;
         overflow: hidden;
     }
+
     .nav div.show_list {
         height: auto;
         display: none;
     }
+
     .nav div.main_list ul {
         flex-direction: column;
         width: 100%;
@@ -135,16 +148,19 @@
         /*same background color of navbar*/
         // background-position: center top;
     }
+
     .nav div.main_list ul li {
         width: 100%;
         text-align: center;
     }
+
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
         font-size: 35px;
         padding: 35px;
     }
+
     .nav div.media_button {
         display: block;
     }
@@ -169,6 +185,7 @@
     top: 20px;
     bottom: 0;
 }
+
 // .navTrigger.active{
 //     top: 0;
 // }
@@ -222,6 +239,7 @@
     50% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -231,6 +249,7 @@
     50% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(45deg);
     }
@@ -240,6 +259,7 @@
     50% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(45deg);
     }
@@ -249,6 +269,7 @@
     50% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(45deg);
     }
@@ -258,9 +279,11 @@
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -270,9 +293,11 @@
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -282,9 +307,11 @@
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(9px) rotate(135deg);
     }
@@ -294,9 +321,11 @@
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(9px) rotate(135deg);
     }
@@ -306,9 +335,11 @@
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -318,9 +349,11 @@
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -330,9 +363,11 @@
     0% {
         -webkit-transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         -webkit-transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         -webkit-transform: translateY(-9px) rotate(135deg);
     }
@@ -342,9 +377,11 @@
     0% {
         transform: translateY(0px) rotate(0deg);
     }
+
     50% {
         transform: translateY(-9px) rotate(0deg);
     }
+
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
@@ -354,12 +391,14 @@
     text-align: center;
     font-size: 4rem;
 }
+
 .myP {
     text-align: justify;
     padding-left: 15%;
     padding-right: 15%;
     font-size: 20px;
 }
+
 @media all and (max-width: 700px) {
     .myP {
         padding: 2%;

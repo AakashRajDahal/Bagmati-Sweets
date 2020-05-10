@@ -213,12 +213,12 @@ html {
 
 body {
   font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f3f3f3;
 }
 
 .hero-slider {
-  height: 95vh;
+  height: 85vh;
   position: relative;
+  margin-bottom: 280px;
 }
 
 .hero-slider .item img {
@@ -255,7 +255,7 @@ body {
   padding: 0 2rem;
 }
 
-.hero-slider .item .cover .hero-slider-content h2 {
+.hero-slider .item .cover .hero-slider-content h6 {
   font-weight: 300;
   font-size: 35px;
   color: #fff;
@@ -280,7 +280,7 @@ body {
           animation-delay: 0.3s;
 }
 
-.hero-slider .owl-item.active h2 {
+.hero-slider .owl-item.active h6 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -1148,5 +1148,18 @@ body {
 #banner-section .slick-next.slick-arrow {
   color: red;
   font-size: 30px;
+}
+
+.grid .row .about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.grid .row .about-us .about-para h2 {
+  color: #444444;
 }
 /*# sourceMappingURL=style.css.map */

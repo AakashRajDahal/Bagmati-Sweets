@@ -1,0 +1,14 @@
+.grid{
+    .row{
+        .about-us{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: auto auto;
+           .about-para{
+               h2{
+                   color: $dark01;
+               }
+           }
+        }
+    }
+}

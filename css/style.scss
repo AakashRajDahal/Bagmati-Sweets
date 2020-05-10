@@ -15,7 +15,6 @@ html {
 
 body {
     font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: $light02;
 }
 
 
@@ -26,3 +25,4 @@ body {
 @import 'topNav';
 @import 'mobile';
 @import 'banner';
+@import 'about-us';

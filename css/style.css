@@ -216,67 +216,186 @@ body {
   background-color: #f3f3f3;
 }
 
-.mainHeader {
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #000;
-  color: #fff;
+header .item {
+  height: 100vh;
+  position: relative;
 }
 
-.mainHeader .topNav,
-.mainHeader .mainNav {
-  padding: 0;
+header .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .item .cover {
+  padding: 75px 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.mainHeader .topNav .side-1,
-.mainHeader .mainNav .side-1 {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  line-height: 21px;
+header .item .cover .header-content {
+  position: relative;
+  padding: 56px;
+  overflow: hidden;
 }
 
-.mainHeader .topNav .side-1 .nav-item,
-.mainHeader .mainNav .side-1 .nav-item {
-  font-size: 16px;
-  margin-right: 8rem;
-}
-
-.mainHeader .topNav .social-icons,
-.mainHeader .mainNav .social-icons {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.mainHeader .topNav .social-icons i,
-.mainHeader .mainNav .social-icons i {
-  margin-left: 1.5em;
-}
-
-.mainHeader .topNav {
-  padding: 0 140px;
-}
-
-.mainHeader .hr {
-  margin: 0 140px;
-  height: 1px;
-  border: none;
+header .item .cover .header-content .line {
+  content: "";
+  display: inline-block;
   width: 100%;
-  background-color: gray;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  border: 9px solid #fff;
+  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+}
+
+header .item .cover .header-content h2 {
+  font-weight: 300;
+  font-size: 35px;
+  color: #fff;
+}
+
+header .item .cover .header-content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 5px 0 20px;
+  word-spacing: 3px;
+  color: #fff;
+}
+
+header .item .cover .header-content h4 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #fff;
+}
+
+header .owl-item.active h1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+header .owl-item.active h2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+header .owl-item.active h4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+header .owl-item.active .line {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+header .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+
+header .owl-nav .owl-prev span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+
+header .owl-nav .owl-prev:focus {
+  outline: 0;
+}
+
+header .owl-nav .owl-prev:hover {
+  background: #000 !important;
+}
+
+header .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+  top: 43%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 0;
+}
+
+header .owl-nav .owl-next span {
+  font-size: 1.6875rem;
+  color: #fff;
+}
+
+header .owl-nav .owl-next:focus {
+  outline: 0;
+}
+
+header .owl-nav .owl-next:hover {
+  background: #000 !important;
+}
+
+header:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+
+header:hover .owl-next {
+  right: 0px;
+  opacity: 1;
 }
 
 /* Navbar section */
@@ -1051,4 +1170,25 @@ body {
 }
 
 /* CSS for Mobile */
+#banner-section .slick-next::before,
+#banner-section .slick-prev::before {
+  color: gray;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+#banner-section img {
+  width: 100%;
+  height: 100%;
+}
+
+#banner-section .slick-prev.slick-arrow {
+  font-size: 30px;
+  color: red;
+}
+
+#banner-section .slick-next.slick-arrow {
+  color: red;
+  font-size: 30px;
+}
 /*# sourceMappingURL=style.css.map */

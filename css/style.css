@@ -1157,9 +1157,46 @@ body {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
+  margin: 3.5rem 4rem;
+  grid-column-gap: 0rem;
+}
+
+.grid .row .about-us .about-pic {
+  height: 380px;
+  width: 400px;
+  position: relative;
+}
+
+.grid .row .about-us .about-pic .abtImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+
+.grid .row .about-us .about-pic #about-bgImg {
+  position: absolute;
+  left: -70px;
+  top: -70px;
+  width: 150px;
+  height: 150px;
+  z-index: -1;
+}
+
+.grid .row .about-us .about-para {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .grid .row .about-us .about-para h2 {
   color: #444444;
+  line-height: 60px;
+}
+
+.grid .row .about-us .about-para p a {
+  color: #fd5f00;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

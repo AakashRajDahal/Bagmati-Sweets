@@ -1,147 +1,118 @@
-header .item {
-    height: 100vh;
-    position: relative;
+.hero-slider {
+  height: 95vh;
+  position: relative;
+  .item {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cover {
+      padding: 75px 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .hero-slider-content {
+        position: relative;
+        padding: 56px;
+        overflow: hidden;
+        padding: 0 2rem;
+        h2 {
+          font-weight: 300;
+          font-size: 35px;
+          color: #fff;
+        }
+        h1 {
+          font-size: 56px;
+          font-weight: 600;
+          margin: 5px 0 20px;
+          word-spacing: 3px;
+          color: #fff;
+        }
+      }
+    }
   }
-  header .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .owl-item.active {
+    h1 {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-name: fadeInDown;
+      animation-delay: 0.3s;
+    }
+    h2 {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      animation-name: fadeInDown;
+      animation-delay: 0.3s;
+    }
   }
-  header .item .cover {
-    padding: 75px 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
+}
+
+.hero-slider .owl-nav .owl-prev{
+  position: absolute;
+  left: 10%;
+  top: 43%;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  &:focus {
+    outline:0;
   }
-  header .item .cover .header-content {
-    position: relative;
-    padding: 56px;
-    overflow: hidden;
+  &:hover {
+    background: #000 !important;
   }
-  header .item .cover .header-content .line {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    border: 9px solid #fff;
-    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-  }
-  header .item .cover .header-content h2 {
-    font-weight: 300;
+  span {
     font-size: 35px;
     color: #fff;
+    border:2px solid #fff;
+    padding:0 13px;
   }
-  header .item .cover .header-content h1 {
-    font-size: 56px;
-    font-weight: 600;
-    margin: 5px 0 20px;
-    word-spacing: 3px;
-    color: #fff;
-  }
-  header .item .cover .header-content h4 {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 36px;
-    color: #fff;
-  }
-  header .owl-item.active h1 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 0.3s;
-  }
-  header .owl-item.active h2 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInDown;
-    animation-delay: 0.3s;
-  }
-  header .owl-item.active h4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-    animation-delay: 0.3s;
-  }
-  header .owl-item.active .line {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-name: fadeInLeft;
-    animation-delay: 0.3s;
-  }
-  header .owl-nav .owl-prev {
-    position: absolute;
-    left: 15px;
-    top: 43%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: rgba(0, 0, 0, 0.5) !important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 0;
-  }
-  header .owl-nav .owl-prev span {
-    font-size: 1.6875rem;
-    color: #fff;
-  }
-  header .owl-nav .owl-prev:focus {
+}
+.hero-slider .owl-nav .owl-next {
+  right: 10%;
+  top: 43%;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  z-index: 1000;  
+  &:focus {
     outline: 0;
   }
-  header .owl-nav .owl-prev:hover {
-    background: #000 !important;
+  &:hover {
+    background: $primary !important;
   }
-  header .owl-nav .owl-next {
-    position: absolute;
-    right: 15px;
-    top: 43%;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: rgba(0, 0, 0, 0.5) !important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 0;
-  }
-  header .owl-nav .owl-next span {
-    font-size: 1.6875rem;
+  span {
+    font-size: 35px;
     color: #fff;
+    border:2px solid #fff;
+    padding:0 13px;
   }
-  header .owl-nav .owl-next:focus {
-    outline: 0;
-  }
-  header .owl-nav .owl-next:hover {
-    background: #000 !important;
-  }
-  header:hover .owl-prev {
-    left: 0px;
-    opacity: 1;
-  }
-  header:hover .owl-next {
-    right: 0px;
-    opacity: 1;
-  }
+}
+
+.hero-slider:hover .owl-prev {
+  left: 0px;
+  opacity: 1;
+}
+.hero-slider:hover .owl-next {
+  right: 0px;
+  opacity: 1;
+}

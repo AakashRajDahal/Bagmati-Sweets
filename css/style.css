@@ -216,19 +216,19 @@ body {
   background-color: #f3f3f3;
 }
 
-header .item {
-  height: 100vh;
+.hero-slider {
+  height: 95vh;
   position: relative;
 }
 
-header .item img {
+.hero-slider .item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-header .item .cover {
+.hero-slider .item .cover {
   padding: 75px 0;
   position: absolute;
   width: 100%;
@@ -242,34 +242,26 @@ header .item .cover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
-header .item .cover .header-content {
+.hero-slider .item .cover .hero-slider-content {
   position: relative;
   padding: 56px;
   overflow: hidden;
+  padding: 0 2rem;
 }
 
-header .item .cover .header-content .line {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  border: 9px solid #fff;
-  -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-  clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
-}
-
-header .item .cover .header-content h2 {
+.hero-slider .item .cover .hero-slider-content h2 {
   font-weight: 300;
   font-size: 35px;
   color: #fff;
 }
 
-header .item .cover .header-content h1 {
+.hero-slider .item .cover .hero-slider-content h1 {
   font-size: 56px;
   font-weight: 600;
   margin: 5px 0 20px;
@@ -277,14 +269,7 @@ header .item .cover .header-content h1 {
   color: #fff;
 }
 
-header .item .cover .header-content h4 {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
-  color: #fff;
-}
-
-header .owl-item.active h1 {
+.hero-slider .owl-item.active h1 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -295,7 +280,7 @@ header .owl-item.active h1 {
           animation-delay: 0.3s;
 }
 
-header .owl-item.active h2 {
+.hero-slider .owl-item.active h2 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -306,94 +291,67 @@ header .owl-item.active h2 {
           animation-delay: 0.3s;
 }
 
-header .owl-item.active h4 {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-          animation-name: fadeInUp;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-header .owl-item.active .line {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-header .owl-nav .owl-prev {
+.hero-slider .owl-nav .owl-prev {
   position: absolute;
-  left: 15px;
+  left: 10%;
   top: 43%;
-  opacity: 0;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  background: rgba(0, 0, 0, 0.5) !important;
-  width: 40px;
+  width: 50px;
   cursor: pointer;
-  height: 40px;
+  height: 50px;
   position: absolute;
   display: block;
   z-index: 1000;
-  border-radius: 0;
 }
 
-header .owl-nav .owl-prev span {
-  font-size: 1.6875rem;
-  color: #fff;
-}
-
-header .owl-nav .owl-prev:focus {
+.hero-slider .owl-nav .owl-prev:focus {
   outline: 0;
 }
 
-header .owl-nav .owl-prev:hover {
+.hero-slider .owl-nav .owl-prev:hover {
   background: #000 !important;
 }
 
-header .owl-nav .owl-next {
-  position: absolute;
-  right: 15px;
+.hero-slider .owl-nav .owl-prev span {
+  font-size: 35px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0 13px;
+}
+
+.hero-slider .owl-nav .owl-next {
+  right: 10%;
   top: 43%;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  background: rgba(0, 0, 0, 0.5) !important;
-  width: 40px;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
   cursor: pointer;
-  height: 40px;
   position: absolute;
   display: block;
   z-index: 1000;
-  border-radius: 0;
 }
 
-header .owl-nav .owl-next span {
-  font-size: 1.6875rem;
-  color: #fff;
-}
-
-header .owl-nav .owl-next:focus {
+.hero-slider .owl-nav .owl-next:focus {
   outline: 0;
 }
 
-header .owl-nav .owl-next:hover {
-  background: #000 !important;
+.hero-slider .owl-nav .owl-next:hover {
+  background: #fd5f00 !important;
 }
 
-header:hover .owl-prev {
+.hero-slider .owl-nav .owl-next span {
+  font-size: 35px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 0 13px;
+}
+
+.hero-slider:hover .owl-prev {
   left: 0px;
   opacity: 1;
 }
 
-header:hover .owl-next {
+.hero-slider:hover .owl-next {
   right: 0px;
   opacity: 1;
 }

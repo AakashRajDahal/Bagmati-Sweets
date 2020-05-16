@@ -1221,12 +1221,22 @@ body {
   height: auto;
 }
 
+.grid .row .delivery .delivery-contact .cont1 {
+  margin-top: 3rem;
+}
+
 .grid .row .delivery .delivery-contact .cont1 .circle {
-  width: 45px;
-  height: 45px;
+  width: 48px;
+  height: 30px;
   border-radius: 50%;
   background-color: #fd5f00;
   color: #fff;
+  padding: 10px;
   font-size: 16px;
+  margin-right: 0.5rem;
+}
+
+.grid .row .delivery .delivery-contact .cont1 .call1 {
+  color: #989898;
 }
 /*# sourceMappingURL=style.css.map */

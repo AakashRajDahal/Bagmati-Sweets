@@ -1201,6 +1201,14 @@ body {
   text-decoration: none;
 }
 
+.menu-section {
+  background-image: url("../images/menu-bg.png");
+}
+
+.menu-section h2 {
+  text-align: center;
+}
+
 .grid .row.delivery-section {
   margin: 4rem 0;
 }

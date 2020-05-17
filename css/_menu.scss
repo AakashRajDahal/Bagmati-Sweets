@@ -3,4 +3,41 @@
     h2{
         text-align: center;
     }
+    #menu-list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 120px 120px 120px 120px;
+        grid-gap: 2rem 4rem;
+        padding: 2rem 4rem;
+        .list1{
+            // background-color: red;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: auto;
+            .list-pic{
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .list-content{
+                display: flex;
+                flex-direction: column;
+                // align-items: center;
+                padding-left: 1rem;
+                justify-content: center;
+                text-align: start;
+                span{
+                    font-weight: 600;
+                }
+                .list-title{
+                    color: $textColor1;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

@@ -1203,10 +1203,42 @@ body {
 
 .menu-section {
   background-image: url("../images/menu-bg.png");
+  padding: 4rem 1rem;
 }
 
 .menu-section h2 {
   text-align: center;
+}
+
+.menu-section .side-table .main-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+}
+
+.menu-section .side-table .main-table .tab .grid .tablinks {
+  border: none;
+  background-color: transparent;
+  margin: 1rem;
+  font-size: 24px;
+}
+
+.menu-section .side-table .main-table .tab .grid .active, .menu-section .side-table .main-table .tab .grid .tablinks:hover {
+  color: #FD5F00;
+}
+
+.menu-section .side-table .main-table .tab .grid .active:after, .menu-section .side-table .main-table .tab .grid .tablinks:hover:after {
+  content: '';
+  width: 23px;
+  height: 10px;
+  background-color: red;
 }
 
 .menu-section #menu-list {

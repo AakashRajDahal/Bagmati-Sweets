@@ -1,20 +1,48 @@
-.menu-section{
-    background-image: url('../images/menu-bg.png');
-    h2{
+.menu-section {
+    background-image: url("../images/menu-bg.png");
+    padding: 4rem 1rem;
+    h2 {
         text-align: center;
     }
-    #menu-list{
+    .side-table {
+        .main-table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 4rem;
+            .tab {
+                .grid {
+                    .tablinks {
+                        border: none;
+                        background-color: transparent;
+                        margin: 1rem;
+                        font-size: 24px;
+                    }
+                            .active, .tablinks:hover {
+                                color: #FD5F00;
+                                &:after{
+                                    content: '';
+                                    width: 23px;
+                                    height: 10px;
+                                    background-color: red;
+                                }
+                              }
+                }
+            }
+        }
+    }
+    #menu-list {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 120px 120px 120px 120px;
         grid-gap: 2rem 4rem;
         padding: 2rem 4rem;
-        .list1{
+        .list1 {
             // background-color: red;
             display: grid;
             grid-template-columns: 1fr 1.5fr;
             grid-template-rows: auto;
-            .list-pic{
+            .list-pic {
                 height: 100%;
                 width: 100%;
                 background-color: #ffffff;
@@ -23,16 +51,16 @@
                 align-items: center;
                 justify-content: center;
             }
-            .list-content{
+            .list-content {
                 display: flex;
                 flex-direction: column;
                 padding-left: 1rem;
                 justify-content: center;
                 text-align: start;
-                span{
+                span {
                     font-weight: 600;
                 }
-                .list-title{
+                .list-title {
                     color: $textColor1;
                     font-size: 16px;
                 }

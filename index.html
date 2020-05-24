@@ -138,6 +138,22 @@
   </aside>
 
   <aside class="menu-section">
+    <div class="menu-img">
+      <aside class="menu1">
+        <img src="./images/breakfast.svg" alt="breakfast here">
+        <div>
+          <span class="title1">Breakfast</span>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, cumque.</p>
+        </div>
+      </aside>
+      <aside class="menu1">
+        <img src="./images/diet.svg" alt="breakfast here">
+        <div>
+          <span class="title1">Lunch</span>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, cumque.</p>
+        </div>
+      </aside>
+    </div>
     <h2>Our Featured Menu Items</h2>
     <div class="table-grid">
       <div class="side-table">
@@ -528,20 +544,20 @@
         }
       });
     });
-//this is for tab section of featured image
-function openContent(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+    //this is for tab section of featured image
+    function openContent(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
   </script>
 </body>
 

@@ -15,7 +15,8 @@
         "_about-us.scss",
         "_menu.scss",
         "_delivery.scss",
-        "_footer.scss"
+        "_footer.scss",
+        "_contact-page.scss"
     ],
     "names": [],
     "file": "style.css"

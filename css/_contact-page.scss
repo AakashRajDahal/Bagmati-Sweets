@@ -3,4 +3,20 @@
        text-align: center;
        line-height: 60px;
    }
+   .grid.contact-div{
+       display: flex;
+       margin-top: 4rem;
+    //    grid-template-columns: 600px auto;
+    //    grid-gap: 2rem;
+    .contact2{
+        margin-left: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        .contact-order{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+   }
 }

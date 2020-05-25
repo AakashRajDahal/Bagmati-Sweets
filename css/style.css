@@ -1473,7 +1473,18 @@ footer .copyright .grid .copyright-2 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3.9rem;
+  margin-top: 5rem;
+}
+
+.contact-main .grid.contact-div .contact1 {
+  position: relative;
+}
+
+.contact-main .grid.contact-div .contact1 img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: -1;
 }
 
 .contact-main .grid.contact-div .contact2 {

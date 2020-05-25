@@ -5,9 +5,18 @@
    }
    .grid.contact-div{
        display: flex;
-       margin-top: 3.9rem;
+       margin-top: 5rem;
     //    grid-template-columns: 600px auto;
     //    grid-gap: 2rem;
+    .contact1{
+        position: relative;
+        img{
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            z-index: -1;
+        }
+    }
     .contact2{
         margin-left: 2rem;
         display: grid;

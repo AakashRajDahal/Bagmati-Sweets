@@ -358,6 +358,10 @@ body {
 }
 
 /* Navbar section */
+section.mainHeader {
+  background-color: #000;
+}
+
 .mainHeader.topNav1 {
   margin-top: 40px;
 }
@@ -744,6 +748,10 @@ body {
 
 /* CSS for Mobile */
 /* Navbar section */
+section.mainHeader {
+  background-color: #000;
+}
+
 .mainHeader.topNav1 {
   margin-top: 40px;
 }

@@ -32,3 +32,6 @@ body {
 @import 'contact-page';
 
 
+@media only screen and (max-width:768px){
+    @import "768_sm/contact-page";
+}

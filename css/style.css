@@ -362,11 +362,11 @@ section.mainHeader {
   background-color: #000;
 }
 
-.mainHeader.topNav1 {
-  margin-top: 40px;
+section.mainHeader nav.topNav {
+  color: #fff;
 }
 
-.mainHeader.topNav1 nav .container {
+section.mainHeader nav.topNav ul.side1 {
   margin: auto 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,11 +752,11 @@ section.mainHeader {
   background-color: #000;
 }
 
-.mainHeader.topNav1 {
-  margin-top: 40px;
+section.mainHeader nav.topNav {
+  color: #fff;
 }
 
-.mainHeader.topNav1 nav .container {
+section.mainHeader nav.topNav ul.side1 {
   margin: auto 60px;
   display: -webkit-box;
   display: -ms-flexbox;

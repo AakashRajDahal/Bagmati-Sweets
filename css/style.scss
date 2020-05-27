@@ -1,37 +1,35 @@
-@import 'variables';
-@import 'typography';
-@import 'grid';
+@import "variables";
+@import "typography";
+@import "grid";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@import 'header';
+@import "banner-slider";
+@import "topNav";
+@import "mobile";
+@import "topNav";
+@import "mobile";
+@import "banner";
+@import "about-us";
+@import "menu";
+@import "delivery";
+@import "footer";
+@import "contact-page";
 
-// @import 'header';
-@import 'banner-slider';
- @import 'topNav';
-@import 'mobile';
-@import 'topNav';
-@import 'mobile';
-@import 'banner';
-@import 'about-us';
-@import 'menu';
-@import 'delivery';
-@import 'footer';
-@import 'contact-page';
-
-
-@media only screen and (max-width:768px){
-    @import "768_sm/contact-page";
+@media only screen and (max-width: 768px) {
+  @import "768_sm/contact-page";
 }

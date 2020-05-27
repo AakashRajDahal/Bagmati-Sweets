@@ -213,11 +213,81 @@ html {
 }
 
 body {
-  font-family: 'Cera Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainHeader {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #000;
+  color: #fff;
+}
+
+.mainHeader .topNav,
+.mainHeader .mainNav {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeader .topNav .side-1,
+.mainHeader .mainNav .side-1 {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 21px;
+}
+
+.mainHeader .topNav .side-1 .nav-item,
+.mainHeader .mainNav .side-1 .nav-item {
+  font-size: 16px;
+  margin-right: 8rem;
+}
+
+.mainHeader .topNav .social-icons,
+.mainHeader .mainNav .social-icons {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.mainHeader .topNav .social-icons i,
+.mainHeader .mainNav .social-icons i {
+  margin-left: 1.5em;
+}
+
+.mainHeader .topNav {
+  margin: 0 140px;
+  border-bottom: 1px solid #cbcbcb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainHeader .hr {
+  margin: 0 140px;
+  height: 1px;
+  border: none;
+  width: 100%;
+  background-color: gray;
 }
 
 .hero-slider {
-  height: 85vh;
+  height: 70vh;
   position: relative;
   margin-bottom: 280px;
 }
@@ -259,14 +329,6 @@ body {
 .hero-slider .item .cover .hero-slider-content h6 {
   font-weight: 300;
   font-size: 35px;
-  color: #fff;
-}
-
-.hero-slider .item .cover .hero-slider-content h1 {
-  font-size: 56px;
-  font-weight: 600;
-  margin: 5px 0 20px;
-  word-spacing: 3px;
   color: #fff;
 }
 

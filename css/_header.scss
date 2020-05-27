@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background-color:#000;
+    background-color: #000;
     color: #fff;
 
     .topNav,
@@ -28,21 +28,22 @@
         .social-icons {
             font-size: 20px;
             margin: 10px 0;
-            i{
+            i {
                 margin-left: 1.5em;
             }
-
         }
     }
-    .topNav{
-        padding: 0 140px;
-    //  border-bottom: 1px solid #cbcbcb;
+    .topNav {
+        margin: 0 140px;
+        border-bottom: 1px solid #cbcbcb;
+        display: flex;
+        justify-content: space-between;
     }
-    .hr{
+    .hr {
         margin: 0 140px;
         height: 1px;
         border: none;
         width: 100%;
-       background-color: gray;
+        background-color: gray;
     }
 }

@@ -1,15 +1,10 @@
 .grid {
     .row {
         .about-us {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-            margin: 5.5rem 4rem;
-            grid-column-gap: 0rem;
-            padding-bottom: 8rem;
             .about-pic {
-                height: 480px;
-                width: 400px;
+                grid-column:1/-1;
+                max-height: 250px;
+                width: auto;
                 position: relative;
                 .abtImg {
                     width: 100%;
@@ -27,19 +22,10 @@
                 }
             }
             .about-para {
+                grid-column:1/-1;
+                height: 250;
                 max-width: 400px;
                 font-size: 18px;
-                line-height: 28px;
-                h2 {
-                    color: $dark01;
-                    line-height: 60px;
-                }
-                p {
-                    a {
-                        color: $primary;
-                        text-decoration: none;
-                    }
-                }
             }
         }
     }

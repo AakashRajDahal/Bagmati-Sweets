@@ -355,6 +355,7 @@ body {
   position: absolute;
   display: block;
   z-index: 1000;
+  margin-left: 140px;
 }
 
 .hero-slider .owl-nav .owl-prev:focus {
@@ -381,6 +382,7 @@ body {
   position: absolute;
   display: block;
   z-index: 1000;
+  margin-right: 140px;
 }
 
 .hero-slider .owl-nav .owl-next:focus {

@@ -66,13 +66,13 @@
   top: 43%;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-
   width: 50px;
   cursor: pointer;
   height: 50px;
   position: absolute;
   display: block;
   z-index: 1000;
+  margin-left: 140px;
   &:focus {
     outline:0;
   }
@@ -94,7 +94,8 @@
   cursor: pointer;
   position: absolute;
   display: block;
-  z-index: 1000;  
+  z-index: 1000;
+  margin-right: 140px;
   &:focus {
     outline: 0;
   }

@@ -2,15 +2,6 @@
  * Box model adjustments
  * `border-box`... ALL THE THINGS - http://cbrac.co/RQrDL5
  */
-
- *,
- *:before,
- *:after {
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
- }
- 
  /**
   * 1. Force a vertical scrollbar - http://cbrac.co/163MspB
   * NOTE: Use `text-rendering` with caution - http://cbrac.co/SJt8p1
@@ -18,25 +9,12 @@
   * NOTE: IE for Windows Phone 8 ignores `-ms-text-size-adjust` if the
   *       viewport <meta> tag is used - http://cbrac.co/1cFrAvl
   */
- 
- html {
-   font-size: 100%;
-   overflow-y: scroll; /* 1 */
-   min-height: 100%;
- }
- 
+
  /**
   * 1. Inherits percentage declared on above <html> as base `font-size`
   * 2. Unitless `line-height`, which acts as multiple of base `font-size`
   */
- 
- body {
-   font-family: "Helvetica Neue", Arial, sans-serif;
-   font-size: 1em;   /* 1 */
-   line-height: 1.5; /* 2 */
-   color: #444;
- }
- 
+
  /* Page wrapper */
  .wrapper {
    width: 90%;
@@ -44,30 +22,8 @@
    margin: 4em auto;
    text-align: center;
  }
- 
- /* Icons */
- .icon {
-   display: inline-block;
-   width: 16px;
-   height: 16px;
-   vertical-align: middle;
-   fill: currentcolor;
- }
- 
- /* Headings */
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-   color: #222;
-   font-weight: 700;
-   font-family: inherit;
-   line-height: 1.333;
-   text-rendering: optimizeLegibility;
- }
- 
+
+
  /**
   * Modals ($modals)
   */
@@ -160,11 +116,9 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
  }
- 
  .modal-content > *:first-child {
    margin-top: 0;
  }
- 
  .modal-content > *:last-child {
    margin-bottom: 0;
  }

@@ -276,14 +276,14 @@ body {
 }
 
 .hero-slider {
-  height: 70vh;
+  height: 50vh;
   position: relative;
   margin-bottom: 280px;
 }
 
 .hero-slider .item img {
   width: 100%;
-  height: 100%;
+  height: 520px;
   -o-object-fit: cover;
      object-fit: cover;
 }

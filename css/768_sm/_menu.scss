@@ -1,5 +1,4 @@
 .menu-section {
-  background-image: url("../images/menu-bg.png");
   position: relative;
   margin: 4rem auto;
   padding: 4rem auto;
@@ -13,12 +12,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
-    box-shadow: 0px 6px 12px #cbcbcb;
     .menu1 {
-      color: #ffffff;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
+     grid-column: 1/-1;
+      grid-row-gap: 2rem;
+
     }
   }
   h2 {
@@ -55,7 +52,7 @@
   }
   #menu-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 120px 120px 120px 120px;
     grid-gap: 2rem 4rem;
     padding: 2rem 4rem;

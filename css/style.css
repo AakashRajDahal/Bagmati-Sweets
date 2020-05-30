@@ -1303,9 +1303,12 @@ section.mainHeader nav.topNav ul.side1 {
   color: #ffffff;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-column-gap: 1rem;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+}
+
+.menu-section .menu-img .menu1 div p {
+  margin: 2rem auto;
 }
 
 .menu-section h2 {

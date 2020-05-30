@@ -17,8 +17,10 @@
     .menu1 {
       color: #ffffff;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 1rem;
+      grid-template-columns: 1fr 1.5fr;
+      div p{
+        margin: 2rem auto;
+      }
     }
   }
   h2 {

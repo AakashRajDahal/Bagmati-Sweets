@@ -27,50 +27,50 @@
 
 <body>
   <!-- <header> -->
-    <section class="mainHeader">
-      <nav class="topNav">
-        <ul class="side-1">
-          <li class="nav-item"><i class="fas fa-map-marker"></i>&nbsp; Tripureshor, Kathmandu</li>
-          <li class="nav-item "><i class="fas fa-phone"></i>&nbsp; +977 9841 XXX XXX</li>
-          <li class="nav-item "><i class="far fa-clock"></i>&nbsp; 10AM - 08PM</li>
-        </ul>
-        <div class="social-icons">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="far fa-envelope"></i>
+  <section class="mainHeader">
+    <nav class="topNav">
+      <ul class="side-1">
+        <li class="nav-item"><i class="fas fa-map-marker"></i>&nbsp; Tripureshor, Kathmandu</li>
+        <li class="nav-item "><i class="fas fa-phone"></i>&nbsp; +977 9841 XXX XXX</li>
+        <li class="nav-item "><i class="far fa-clock"></i>&nbsp; 10AM - 08PM</li>
+      </ul>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+    </nav>
+    <div class="topNav1" id="topNavSticky">
+      <nav class="nav">
+        <div class="container-nav">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./images/logo.svg" alt="logo here">
+            </a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu-section">Menu </a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a>
+                  <button class="modal-toggle">
+                    Make an order
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+          </span>
         </div>
       </nav>
-      <div class="topNav1" id="topNavSticky">
-        <nav class="nav">
-          <div class="container-nav">
-            <div class="logo">
-              <a href="index.html">
-                <img src="./images/logo.svg" alt="logo here">
-              </a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-              <ul class="navlinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#menu-section">Menu </a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                  <a>
-                    <button class="modal-toggle">
-                      Make an order
-                    </button>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <span class="navTrigger">
-              <i></i>
-              <i></i>
-              <i></i>
-            </span>
-          </div>
-        </nav>
-      </div>
-    </section>
+    </div>
+  </section>
   <!-- </header> -->
   <!-- grid -->
 
@@ -194,7 +194,7 @@
       <div class="side-table">
         <div class="main-table">
           <div class="tab">
-            <div class="grid">
+            <div class="grid" id="tabs-nav">
               <!-- <button class="btn1">News</button> -->
               <button class="tablinks" onclick="openContent(event, 'REQUESTS')">Most Popular</button>
               <button class="tablinks" onclick="openContent(event, 'APPROVED')">Sweets</button>
@@ -204,132 +204,133 @@
             </div>
           </div>
         </div>
-
-        <div class="tabcontent" id="REQUESTS">
-          <div class="grid">
-            <aside class="menu-list" id="menu-list">
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/tea.svg" alt="tea">
+        <div id="tabs-content">
+          <div class="tab-content" id="REQUESTS">
+            <div class="grid">
+              <aside class="menu-list" id="menu-list">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/tea.svg" alt="tea">
+                  </div>
+                  <div class="list-content">
+                    <span>Matka Tea</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Matka Tea</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/cookies.svg" alt="Coconut Cookie">
+                  </div>
+                  <div class="list-content">
+                    <span>Coconut Cookie</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/cookies.svg" alt="Coconut Cookie">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/doughnut.svg" alt="Chocolate Doughnut">
+                  </div>
+                  <div class="list-content">
+                    <span>Chocolate Doughnut</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Coconut Cookie</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/muffin.svg" alt="Cupcake">
+                  </div>
+                  <div class="list-content">
+                    <span>Cupcake</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/doughnut.svg" alt="Chocolate Doughnut">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/ice-cream.svg" alt="Strawberry Icecream">
+                  </div>
+                  <div class="list-content">
+                    <span>Strawberry Icecream</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Chocolate Doughnut</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/jam.svg" alt="Paneer Momo">
+                  </div>
+                  <div class="list-content">
+                    <span>Paneer Momo</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/muffin.svg" alt="Cupcake">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/bread.svg" alt="Butter Toast">
+                  </div>
+                  <div class="list-content">
+                    <span>Butter Toast</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Cupcake</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/frappe.svg" alt="Hot Chocolate">
+                  </div>
+                  <div class="list-content">
+                    <span>Hot Chocolate</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/ice-cream.svg" alt="Strawberry Icecream">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/laddu.svg" alt="Laddu (1KG)">
+                  </div>
+                  <div class="list-content">
+                    <span>Laddu (1KG)</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Strawberry Icecream</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/cake.svg" alt="Red Velvet Cake">
+                  </div>
+                  <div class="list-content">
+                    <span>Red Velvet Cake</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/jam.svg" alt="Paneer Momo">
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/cook.svg" alt="Mutter Paneer">
+                  </div>
+                  <div class="list-content">
+                    <span>Mutter Paneer</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-                <div class="list-content">
-                  <span>Paneer Momo</span>
-                  <span class="list-title">Rs. 30/-</span>
+                <div class="list1">
+                  <div class="list-pic">
+                    <img src="./images/samosa.svg" alt="Samosa (2pc)">
+                  </div>
+                  <div class="list-content">
+                    <span>Matka Tea</span>
+                    <span class="list-title">Rs. 30/-</span>
+                  </div>
                 </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/bread.svg" alt="Butter Toast">
-                </div>
-                <div class="list-content">
-                  <span>Butter Toast</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/frappe.svg" alt="Hot Chocolate">
-                </div>
-                <div class="list-content">
-                  <span>Hot Chocolate</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/laddu.svg" alt="Laddu (1KG)">
-                </div>
-                <div class="list-content">
-                  <span>Laddu (1KG)</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/cake.svg" alt="Red Velvet Cake">
-                </div>
-                <div class="list-content">
-                  <span>Red Velvet Cake</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/cook.svg" alt="Mutter Paneer">
-                </div>
-                <div class="list-content">
-                  <span>Mutter Paneer</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-              <div class="list1">
-                <div class="list-pic">
-                  <img src="./images/samosa.svg" alt="Samosa (2pc)">
-                </div>
-                <div class="list-content">
-                  <span>Matka Tea</span>
-                  <span class="list-title">Rs. 30/-</span>
-                </div>
-              </div>
-            </aside>
+              </aside>
+            </div>
           </div>
-        </div>
-        <div class="tabcontent" id="APPROVED">
-          enter here
-        </div>
-        <div class="tabcontent" id="EXPIRED">
-          Hot beverage here
-        </div>
-        <div class="tabcontent" id="ALL">
-          close beverage here
-        </div>
-        <div class="tabcontent" id="LUNCH">
-          Enter lunch list here
+          <div class="tab-content" id="APPROVED">
+            enter here
+          </div>
+          <div class="tab-content" id="EXPIRED">
+            Hot beverage here
+          </div>
+          <div class="tab-content" id="ALL">
+            close beverage here
+          </div>
+          <div class="tab-content" id="LUNCH">
+            Enter lunch list here
+          </div>
         </div>
         <!-- <div class="tabcontent1">
           enter all meni here
@@ -464,11 +465,17 @@
         }
       });
     });
+    // Show the first tab and hide the rest
+    $(document).ready(function () {
+      $('#tabs-nav button:first-child').addClass('active');
+      $('.tab-content').hide();
+      $('.tab-content:first').show();
+    });
 
     //this is for tab section of featured image
     function openContent(evt, cityName) {
       var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
+      tabcontent = document.getElementsByClassName("tab-content");
       for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
@@ -479,7 +486,7 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-//fixed topNav header
+    //fixed topNav header
     window.onscroll = function () { myFunction() };
     var header = document.getElementById("topNavSticky");
     var sticky = header.offsetTop;
@@ -491,15 +498,15 @@
       }
     }
 
- //onclick  menu icon
- $(document).ready(function () {
- $('.navTrigger').click(function () {
-  $(this).toggleClass('active');
-  console.log("Clicked menu");
-  $("#mainListDiv").toggleClass("show_list");
-  $("#mainListDiv").fadeIn();
-});
-});
+    //onclick  menu icon
+    $(document).ready(function () {
+      $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+      });
+    });
 
   </script>
 </body>

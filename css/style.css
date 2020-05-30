@@ -1281,6 +1281,7 @@ section.mainHeader nav.topNav ul.side1 {
   position: relative;
   margin: 4rem auto;
   padding: 4rem auto;
+  padding-bottom: 90px;
 }
 
 .menu-section .menu-img {
@@ -1518,13 +1519,13 @@ footer .container .footer-section .more-links {
           align-items: center;
 }
 
-footer .container .footer-section .more-links .float-btn {
+footer .container .footer-section .more-links #myBtn {
   height: 48px;
   width: 48px;
   border: 3px solid #707070;
 }
 
-footer .container .footer-section .more-links .float-btn .fas {
+footer .container .footer-section .more-links #myBtn .fas {
   color: #707070;
 }
 

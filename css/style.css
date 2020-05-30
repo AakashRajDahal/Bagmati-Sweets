@@ -267,12 +267,12 @@ body {
           justify-content: space-between;
 }
 
-.mainHeader .hr {
-  margin: 0 140px;
-  height: 1px;
-  border: none;
+.mainHeader .sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
-  background-color: gray;
+  background-color: #000;
+  z-index: 30;
 }
 
 .hero-slider {

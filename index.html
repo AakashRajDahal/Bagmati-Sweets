@@ -433,6 +433,7 @@
   <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
 
   <script>
+    //for popup modal while clicking  make an order
     $(document).ready(function () {
       $('.modal-toggle').on('click', function (e) {
         e.preventDefault();
@@ -440,12 +441,7 @@
       });
     });
 
-    $(document).ready(function () {
-      $('#float-btn').click(function () {
-        $('.this').addClass(mainHeader);
-      });
-    });
-
+    //for hero slide to change image
     $(document).ready(function () {
       $('.owl-carousel').owlCarousel({
         loop: true,
@@ -468,6 +464,7 @@
         }
       });
     });
+
     //this is for tab section of featured image
     function openContent(evt, cityName) {
       var i, tabcontent, tablinks;
@@ -482,8 +479,17 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-
-    
+//fixed topNav header
+    window.onscroll = function () { myFunction() };
+    var header = document.getElementById("topNavSticky");
+    var sticky = header.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
   </script>
 </body>
 

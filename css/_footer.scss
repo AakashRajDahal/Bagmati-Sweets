@@ -39,8 +39,8 @@ footer {
                 justify-content: flex-end;
                 align-items: center;
                 #myBtn {
-                    height: 48px;
-                    width: 48px;
+                    height: 40px;
+                    width: 40px;
                     border: 3px solid $textColor;
                     .fas {
                         color: $textColor;
@@ -53,7 +53,8 @@ footer {
         background-color: #070707;
         padding-top: 20px;
         padding-bottom: 20px;
-        .grid {
+        .grid1 {
+            margin: auto 140px;
             display: flex;
             justify-content: space-between;
             color: white;

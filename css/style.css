@@ -1576,6 +1576,10 @@ footer .copyright .grid .copyright-2 span {
           flex-direction: column;
 }
 
+.contact-main .grid.contact-div .contact2 .contact-order h5 {
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /**
  * Box model adjustments
  * `border-box`... ALL THE THINGS - http://cbrac.co/RQrDL5

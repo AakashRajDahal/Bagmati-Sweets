@@ -9,7 +9,7 @@
   <title>Bagmati Sweets</title>
   <!-- Font Awesome CDN-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-  integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
   <!--javascript code -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,7 +40,7 @@
           <i class="far fa-envelope"></i>
         </div>
       </nav>
-      <div class="topNav1">
+      <div class="topNav1" id="topNavSticky">
         <nav class="nav">
           <div class="container-nav">
             <div class="logo">
@@ -90,7 +90,8 @@
           <aside class="modal-contents">
             <h3>Make An Order</h3>
             <p class="para">
-              We take orders via telephone. Just call us and let our representative know about your location and the menu items that you'd like. We offer deliveries all across the Kathmandu Valley.
+              We take orders via telephone. Just call us and let our representative know about your location and the
+              menu items that you'd like. We offer deliveries all across the Kathmandu Valley.
             </p>
             <div class="content1">
               <h5>For Orders</h5>
@@ -407,7 +408,7 @@
             </aside>
             <aside></aside>
             <aside class="more-links">
-              <button class="float-btn">
+              <button class="float-btn" id="float-btn">
                 <i class="fas fa-chevron-up" style="color: red;"></i>
               </button>
             </aside>
@@ -436,6 +437,12 @@
       $('.modal-toggle').on('click', function (e) {
         e.preventDefault();
         $('.modal').toggleClass('is-visible');
+      });
+    });
+
+    $(document).ready(function () {
+      $('#float-btn').click(function () {
+        $('.this').addClass(mainHeader);
       });
     });
 
@@ -475,6 +482,8 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
+
+    
   </script>
 </body>
 

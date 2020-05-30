@@ -39,6 +39,9 @@
     border-bottom: 1px solid #cbcbcb;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width:992px){
+      display: none;
+    }
   }
   .sticky {
     position: fixed;

@@ -268,6 +268,12 @@ body {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 992px) {
+  .mainHeader .topNav {
+    display: none;
+  }
+}
+
 .mainHeader .sticky {
   position: fixed;
   top: 0;
@@ -335,6 +341,7 @@ body {
           animation-name: fadeInDown;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+  color: #fff;
 }
 
 .hero-slider .owl-item.active h6 {
@@ -346,6 +353,7 @@ body {
           animation-name: fadeInDown;
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
+  color: #fff;
 }
 
 .hero-slider .owl-nav .owl-prev {

@@ -26,7 +26,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header> -->
     <section class="mainHeader">
       <nav class="topNav">
         <ul class="side-1">
@@ -71,7 +71,7 @@
         </nav>
       </div>
     </section>
-  </header>
+  <!-- </header> -->
   <!-- grid -->
 
   <div class="modal">
@@ -490,6 +490,17 @@
         header.classList.remove("sticky");
       }
     }
+
+ //onclick  menu icon 
+ $(document).ready(function () {
+ $('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  console.log("Clicked menu");
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+});
+});
+
   </script>
 </body>
 

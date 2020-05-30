@@ -258,6 +258,7 @@ body {
 
 .mainHeader .topNav {
   margin: 0 140px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #cbcbcb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,6 +274,10 @@ body {
   width: 100%;
   background-color: #000;
   z-index: 30;
+}
+
+.mainHeader div#mainListDiv {
+  z-index: 2;
 }
 
 .hero-slider {
@@ -1442,7 +1447,6 @@ footer {
   margin-top: 4rem;
   background-color: #f3f3f3;
   color: #989898;
-  font-family: "Roboto", sans-serif;
 }
 
 footer .container .footer-section {

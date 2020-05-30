@@ -2,7 +2,6 @@ footer {
     margin-top: 4rem;
     background-color: $light02;
     color: $textColor1;
-    font-family: "Roboto", sans-serif;
     .container {
         .footer-section {
             display: grid;
@@ -40,15 +39,14 @@ footer {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                .float-btn{
+                .float-btn {
                     height: 48px;
                     width: 48px;
                     border: 3px solid $textColor;
-                    .fas{
-                        color:$textColor ;
+                    .fas {
+                        color: $textColor;
                     }
                 }
-
             }
         }
     } //container ends here

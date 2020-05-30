@@ -35,6 +35,7 @@
   }
   .topNav {
     margin: 0 140px;
+    padding-bottom: 8px;
     border-bottom: 1px solid #cbcbcb;
     display: flex;
     justify-content: space-between;
@@ -45,5 +46,8 @@
     width: 100%;
     background-color: #000;
     z-index: 30;
+  }
+  div#mainListDiv{
+    z-index: 2;
   }
 }

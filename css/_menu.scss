@@ -42,12 +42,7 @@
           .active,
           .tablinks:hover {
             color: #fd5f00;
-            &:after {
-              content: "";
-              width: 23px;
-              height: 10px;
-              background-color: red;
-            }
+            border-bottom: 3px solid #fd5f00;
           }
         }
       }

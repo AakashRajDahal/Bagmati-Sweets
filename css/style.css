@@ -242,7 +242,7 @@ body {
 .mainHeader .topNav .side-1 .nav-item,
 .mainHeader .mainNav .side-1 .nav-item {
   font-size: 16px;
-  margin-right: 8rem;
+  margin-right: 5rem;
 }
 
 .mainHeader .topNav .social-icons,
@@ -1264,6 +1264,7 @@ section.mainHeader nav.topNav ul.side1 {
   max-width: 600px;
   font-size: 18px;
   line-height: 28px;
+  text-align: center;
 }
 
 .grid .row .about-us .about-para h2 {
@@ -1337,7 +1338,8 @@ section.mainHeader nav.topNav ul.side1 {
   font-size: 24px;
 }
 
-.menu-section .side-table .main-table .tab .grid .active,
+.menu-section .side-table .main-table .tab .grid R
+.active,
 .menu-section .side-table .main-table .tab .grid .tablinks:hover {
   color: #fd5f00;
   border-bottom: 3px solid #fd5f00;
@@ -1552,30 +1554,43 @@ footer .copyright .grid1 .copyright-2 span {
   color: #2680eb;
 }
 
+.contact-main {
+  padding: 2rem 8rem;
+}
+
 .contact-main h2 {
   text-align: center;
   line-height: 60px;
+  margin: 3rem auto;
 }
 
-.contact-main .grid.contact-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5rem;
+.contact-main .contact-map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 550px auto;
+      grid-template-rows: 550px auto;
+  grid-column-gap: 2rem;
 }
 
-.contact-main .grid.contact-div .contact1 {
+.contact-main .contact-map .contact1 {
   position: relative;
 }
 
-.contact-main .grid.contact-div .contact1 img {
+.contact-main .contact-map .contact1 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-main .contact-map .contact1 img {
   position: absolute;
   top: -95px;
   left: -70px;
   z-index: -1;
 }
 
-.contact-main .grid.contact-div .contact2 {
+.contact-main .contact-map .contact2 {
   margin-left: 2rem;
   display: -ms-grid;
   display: grid;
@@ -1585,7 +1600,7 @@ footer .copyright .grid1 .copyright-2 span {
       grid-template-rows: auto;
 }
 
-.contact-main .grid.contact-div .contact2 .contact-order {
+.contact-main .contact-map .contact2 .contact-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1595,7 +1610,7 @@ footer .copyright .grid1 .copyright-2 span {
           flex-direction: column;
 }
 
-.contact-main .grid.contact-div .contact2 .contact-order h5 {
+.contact-main .contact-map .contact2 .contact-order h5 {
   font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

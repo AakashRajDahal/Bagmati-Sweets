@@ -1235,6 +1235,9 @@ section.mainHeader nav.topNav ul.side1 {
   margin: 5.5rem 4rem;
   grid-column-gap: 0rem;
   padding-bottom: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid .row .about-us .about-pic {
@@ -1264,7 +1267,6 @@ section.mainHeader nav.topNav ul.side1 {
   max-width: 600px;
   font-size: 18px;
   line-height: 28px;
-  text-align: center;
 }
 
 .grid .row .about-us .about-para h2 {

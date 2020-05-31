@@ -7,6 +7,7 @@
       margin: 5.5rem 4rem;
       grid-column-gap: 0rem;
       padding-bottom: 8rem;
+      align-items: center;
       .about-pic {
         height: 480px;
         width: 400px;
@@ -30,7 +31,6 @@
         max-width: 600px;
         font-size: 18px;
         line-height: 28px;
-        text-align: center;
         h2 {
           color: $dark01;
           line-height: 60px;

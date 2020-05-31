@@ -31,9 +31,13 @@ body {
 @import "contact-page";
 @import "modal";
 
+@media only screen and (max-width: 992px) {
+  @import "992_xl/header";
+}
 @media only screen and (max-width: 768px) {
   @import "768_sm/contact-page";
   @import "768_sm/about-us";
   @import "768_sm/delivery";
   @import "768_sm/menu";
+
 }

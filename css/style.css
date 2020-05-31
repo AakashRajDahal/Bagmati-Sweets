@@ -532,11 +532,8 @@ section.mainHeader nav.topNav ul.side1 {
   .nav .container-nav {
     margin: 0 60px;
   }
-}
-
-@media screen and (max-width: 768px) {
   .nav {
-    height: 30px;
+    height: 50px;
   }
   .navTrigger {
     display: block;
@@ -922,11 +919,8 @@ section.mainHeader nav.topNav ul.side1 {
   .nav .container-nav {
     margin: 0 60px;
   }
-}
-
-@media screen and (max-width: 768px) {
   .nav {
-    height: 30px;
+    height: 50px;
   }
   .navTrigger {
     display: block;
@@ -1233,7 +1227,7 @@ section.mainHeader nav.topNav ul.side1 {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   margin: 5.5rem 4rem;
-  grid-column-gap: 0rem;
+  grid-gap: 2rem;
   padding-bottom: 8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1763,16 +1757,55 @@ footer .copyright .grid1 .copyright-2 span {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .mainHeader {
+    height: 80px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  .contact-main .grid.contact-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .contact-main {
+    padding: 2rem 4rem;
+  }
+  .contact-main h2 {
+    margin: 2rem auto;
+  }
+  .contact-main .contact-map {
+    -ms-grid-rows: 300px auto;
+        grid-template-rows: 300px auto;
+    grid-row-gap: 2rem;
+  }
+  .contact-main .contact-map .contact1 {
+    grid-column: 1/-1;
+    position: relative;
+  }
+  .contact-main .contact-map .contact1 iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-main .contact-map .contact1 img {
+    position: absolute;
+    top: -75px;
+    left: -50px;
+    z-index: -1;
+  }
+  .contact-main .contact-map .contact2 {
+    grid-column: 1/-1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-row-gap: 1rem;
+  }
+  .contact-main .contact-map .contact2 .contact-order {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .grid .row .about-us .about-pic {
     grid-column: 1/-1;

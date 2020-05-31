@@ -1569,8 +1569,8 @@ footer .copyright .grid1 .copyright-2 span {
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  -ms-grid-rows: 550px auto;
-      grid-template-rows: 550px auto;
+  -ms-grid-rows: 500px auto;
+      grid-template-rows: 500px auto;
   grid-column-gap: 2rem;
 }
 

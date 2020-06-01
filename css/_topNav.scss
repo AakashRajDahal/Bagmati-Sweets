@@ -181,13 +181,10 @@ section.mainHeader{
     margin: 40px 0 0 0;
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: -3px;
     bottom: 0;
 }
 
-// .navTrigger.active{
-//     top: 0;
-// }
 .navTrigger i {
     background-color: $primary;
     border-radius: 2px;

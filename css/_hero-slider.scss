@@ -10,11 +10,8 @@
       display: none;
       /* Caption text */
       .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
         position: absolute;
-        bottom: 8px;
+        top: 40%;
         width: 100%;
         text-align: center;
       }
@@ -50,6 +47,10 @@
     /* Position the "next button" to the right */
     .next {
       right: 140px;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev {
+      left: 140px;
       border-radius: 3px 0 0 3px;
     }
     /* On hover, add a black background color with a little bit see-through */

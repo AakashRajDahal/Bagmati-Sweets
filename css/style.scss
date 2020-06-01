@@ -34,6 +34,8 @@ body {
 
 @media only screen and (max-width: 992px) {
   @import "992_xl/header";
+  @import "992_xl/hero-slider";
+
 }
 @media only screen and (max-width: 768px) {
   @import "768_sm/contact-page";

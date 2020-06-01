@@ -1273,8 +1273,7 @@ section.mainHeader nav.topNav ul.side1 {
   font-size: 24px;
 }
 
-.menu-section .side-table .main-table .tab .grid R
-.active,
+.menu-section .side-table .main-table .tab .grid .active,
 .menu-section .side-table .main-table .tab .grid .tablinks:hover {
   color: #fd5f00;
   border-bottom: 3px solid #fd5f00;
@@ -1699,6 +1698,15 @@ footer .copyright .grid1 .copyright-2 span {
 @media only screen and (max-width: 992px) {
   .mainHeader {
     height: 80px;
+  }
+  .hero-slider {
+    /* Slideshow container */
+  }
+  .hero-slider .slideshow-container .next {
+    right: 90px;
+  }
+  .hero-slider .slideshow-container .prev {
+    left: 90px;
   }
 }
 

@@ -14,13 +14,6 @@
   <!--javascript code -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- Slick -->
-  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- owl carousel link -->
-  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet"
-    type="text/css">
-
   <!-- Our CSS-->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -105,43 +98,6 @@
   </div>
 
 
-  <!-- <aside class="hero-slider">
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img src="./images/heroImage.png" alt="Pic figure here">
-        <div class="cover">
-          <div class="container">
-            <div class="hero-slider-content">
-              <h1 style="color: #fff;">Welcome</h1>
-              <h6 style="color: #fff;">Making delicious food since 1990</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./images/heroImage.png" alt="Pic figure here">
-        <div class="cover">
-          <div class="container">
-            <div class="hero-slider-content">
-              <h1 style="color: #fff;">Experience New Taste</h1>
-              <h6 style="color: #fff;">Veg isn't bad though</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="./images/heroImage.png" alt="Pic figure here">
-        <div class="cover">
-          <div class="container">
-            <div class="hero-slider-content">
-              <h1 style="color: #fff;">Feel like a home</h1>
-              <h6 style="color: #fff;">Feel free for feedback</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside> -->
   <section class="hero-slider">
     <!-- Slideshow container -->
     <div class="slideshow-container">
@@ -150,14 +106,15 @@
         <img src="./images/heroImage.png" alt="Pic figure here">
         <div class="text">
           <h1 style="color: #fff;">Welcome</h1>
-              <h6 style="color: #fff;">Making delicious food since 1990</h6>
+          <h6 style="color: #fff;">Making delicious food since 1990</h6>
         </div>
       </div>
       <div class="mySlides fade">
         <img src="./images/heroImage.png" alt="Pic figure here">
         <div class="text">
           <h1 style="color: #fff;">Experience Taste</h1>
-          <h6 style="color: #fff;">Veg isn't bad though</h6></div>
+          <h6 style="color: #fff;">Veg isn't bad though</h6>
+        </div>
       </div>
       <div class="mySlides fade">
         <img src="./images/heroImage.png" alt="Pic figure here">
@@ -472,56 +429,32 @@
       });
     });
 
-    //for hero slide to change image
-    // $(document).ready(function () {
-    //   $('.owl-carousel').owlCarousel({
-    //     loop: true,
-    //     margin: 10,
-    //     dots: false,
-    //     nav: true,
-    //     mouseDrag: false,
-    //     autoplay: true,
-    //     animateOut: 'slideOutUp',
-    //     responsive: {
-    //       0: {
-    //         items: 1
-    //       },
-    //       600: {
-    //         items: 1
-    //       },
-    //       1000: {
-    //         items: 1
-    //       }
-    //     }
-    //   });
-    // });
-
     // hero slider starts here
     var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+    showSlides(slideIndex);
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
 
     //hero slider ends here
 

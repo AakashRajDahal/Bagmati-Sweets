@@ -1279,6 +1279,10 @@ section.mainHeader nav.topNav ul.side1 {
   border-bottom: 3px solid #fd5f00;
 }
 
+.menu-section .side-table .main-table .tab .grid *:focus {
+  outline: none;
+}
+
 .menu-section #menu-list {
   display: -ms-grid;
   display: grid;

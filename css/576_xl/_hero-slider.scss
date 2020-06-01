@@ -1,0 +1,27 @@
+.hero-slider {
+  /* Slideshow container */
+  .slideshow-container {
+    height: 380px;
+    .mySlides {
+      .text {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      img {
+        height: 380px;
+      }
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 30px;
+      padding: 5px;
+    }
+    .prev {
+      left: 30px;
+      padding: 5px;
+
+    }
+  }
+}

@@ -1917,6 +1917,57 @@ footer .copyright .grid1 .copyright-2 span {
     color: #989898;
     font-size: 16px;
   }
+  .hero-slider {
+    margin-bottom: 3rem;
+    /* Slideshow container */
+  }
+  .hero-slider .slideshow-container {
+    height: 400px;
+    position: relative;
+    margin: auto;
+    /* Hide the images by default */
+    /* Position the "next button" to the right */
+  }
+  .hero-slider .slideshow-container .mySlides {
+    display: none;
+    /* Caption text */
+  }
+  .hero-slider .slideshow-container .mySlides .text h1 {
+    font-size: 3rem;
+  }
+  .hero-slider .slideshow-container .mySlides img {
+    height: 400px;
+  }
+  .hero-slider .slideshow-container .next {
+    right: 60px;
+  }
+  .hero-slider .slideshow-container .prev {
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero-slider {
+    /* Slideshow container */
+  }
+  .hero-slider .slideshow-container {
+    height: 380px;
+    /* Position the "next button" to the right */
+  }
+  .hero-slider .slideshow-container .mySlides .text h1 {
+    font-size: 2rem;
+  }
+  .hero-slider .slideshow-container .mySlides img {
+    height: 380px;
+  }
+  .hero-slider .slideshow-container .next {
+    right: 30px;
+    padding: 5px;
+  }
+  .hero-slider .slideshow-container .prev {
+    left: 30px;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2025,6 +2076,32 @@ footer .copyright .grid1 .copyright-2 span {
   .menu-section #menu-list .list1 .list-content .list-title {
     color: #989898;
     font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-slider {
+    /* Slideshow container */
+  }
+  .hero-slider .slideshow-container {
+    height: 380px;
+    /* Position the "next button" to the right */
+  }
+  .hero-slider .slideshow-container .mySlides .text h1 {
+    font-size: 1.75rem;
+  }
+  .hero-slider .slideshow-container .mySlides img {
+    height: 380px;
+  }
+  .hero-slider .slideshow-container .next {
+    right: 30px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .hero-slider .slideshow-container .prev {
+    left: 30px;
+    padding: 5px;
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */

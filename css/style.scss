@@ -42,7 +42,16 @@ body {
   @import "768_sm/about-us";
   @import "768_sm/delivery";
   @import "768_sm/menu";
+  @import "768_sm/hero-slider";
+
+}
+@media only screen and (max-width: 576px) {
+  @import "576_xl/hero-slider";
+
 }
 @media only screen and (max-width: 425px) {
   @import "375_col/menu";
+}
+@media only screen and (max-width: 375px) {
+  @import "375_col/hero-slider";
 }

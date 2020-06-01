@@ -147,7 +147,6 @@
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
         <img src="./images/heroImage.png" alt="Pic figure here">
         <div class="text">
           <h1 style="color: #fff;">Welcome</h1>
@@ -155,14 +154,12 @@
         </div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
         <img src="./images/heroImage.png" alt="Pic figure here">
         <div class="text">
           <h1 style="color: #fff;">Experience New Taste</h1>
           <h6 style="color: #fff;">Veg isn't bad though</h6></div>
       </div>
       <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
         <img src="./images/heroImage.png" alt="Pic figure here">
         <div class="text">
           <h1 style="color: #fff;">Feel like a home</h1>
@@ -502,17 +499,14 @@
     // hero slider starts here
     var slideIndex = 1;
 showSlides(slideIndex);
-
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -527,7 +521,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); 
 }
 
     //hero slider ends here

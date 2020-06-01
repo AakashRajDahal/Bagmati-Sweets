@@ -17,12 +17,13 @@ body {
   font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@import 'header';
+@import "header";
 // @import "banner-slider";
 @import "topNav";
 @import "mobile";
 @import "topNav";
 @import "mobile";
+@import "hero-slider";
 // @import "banner";
 @import "about-us";
 @import "menu";
@@ -39,7 +40,6 @@ body {
   @import "768_sm/about-us";
   @import "768_sm/delivery";
   @import "768_sm/menu";
-
 }
 @media only screen and (max-width: 425px) {
   @import "375_col/menu";

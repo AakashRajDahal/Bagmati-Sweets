@@ -462,28 +462,51 @@
     });
 
     //for hero slide to change image
-    $(document).ready(function () {
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        nav: true,
-        mouseDrag: false,
-        autoplay: true,
-        animateOut: 'slideOutUp',
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
-      });
-    });
+    // $(document).ready(function () {
+    //   $('.owl-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     dots: false,
+    //     nav: true,
+    //     mouseDrag: false,
+    //     autoplay: true,
+    //     animateOut: 'slideOutUp',
+    //     responsive: {
+    //       0: {
+    //         items: 1
+    //       },
+    //       600: {
+    //         items: 1
+    //       },
+    //       1000: {
+    //         items: 1
+    //       }
+    //     }
+    //   });
+    // });
+ 
+ // hero slider starts here
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+//hero slider ends here
+
     // Show the first tab and hide the rest
     $(document).ready(function () {
       $('#tabs-nav button:first-child').addClass('active');
@@ -553,6 +576,7 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 // for clicking button goes to top ends here
+
 
   </script>
 </body>

@@ -33,20 +33,20 @@ body {
 @import "modal";
 
 @media only screen and (max-width: 992px) {
-  @import "992_xl/header";
-  @import "992_xl/hero-slider";
+  @import "992_lg/header";
+  @import "992_lg/hero-slider";
 
 }
 @media only screen and (max-width: 768px) {
-  @import "768_sm/contact-page";
-  @import "768_sm/about-us";
-  @import "768_sm/delivery";
-  @import "768_sm/menu";
-  @import "768_sm/hero-slider";
+  @import "768_md/contact-page";
+  @import "768_md/about-us";
+  @import "768_md/delivery";
+  @import "768_md/menu";
+  @import "768_md/hero-slider";
 
 }
 @media only screen and (max-width: 576px) {
-  @import "576_xl/hero-slider";
+  @import "576_sm/hero-slider";
 
 }
 @media only screen and (max-width: 425px) {

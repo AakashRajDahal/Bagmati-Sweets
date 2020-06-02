@@ -1261,7 +1261,7 @@ section.mainHeader nav.topNav ul.side1 {
 }
 
 .menu-section .menu-img-main .menu-img .menu1 div p {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .menu-section h2 {
@@ -1638,7 +1638,7 @@ footer .copyright .grid1 .copyright-2 span {
   position: absolute;
   z-index: 9999;
   top: 6em;
-  left: 20%;
+  left: 22%;
   width: 52em;
   background-color: #fff;
   -webkit-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35);

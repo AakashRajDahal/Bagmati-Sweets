@@ -1090,7 +1090,9 @@ section.mainHeader nav.topNav ul.side1 {
 
 .hero-slider .slideshow-container .mySlides img {
   width: 100%;
-  height: 550px;
+  height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero-slider .slideshow-container .prev,
@@ -1279,7 +1281,7 @@ section.mainHeader nav.topNav ul.side1 {
   border-bottom: 3px solid #fd5f00;
 }
 
-.menu-section .side-table .main-table .tab .grid *:focus {
+.menu-section .side-table .main-table .tab .grid .tablinks:focus {
   outline: none;
 }
 

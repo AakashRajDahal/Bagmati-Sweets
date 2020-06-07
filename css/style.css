@@ -1850,7 +1850,7 @@ footer .copyright .grid1 .copyright-2 span {
     display: -ms-grid;
     display: grid;
     margin: 1fr;
-    grid-column-gap: 2rem;
+    grid-gap: 2rem 0;
   }
   .grid .row.delivery-section .delivery .delivery-img {
     grid-column: 1/-1;
@@ -1860,15 +1860,17 @@ footer .copyright .grid1 .copyright-2 span {
   }
   .grid .row.delivery-section .delivery .delivery-contact {
     grid-column: 1/-1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .grid .row.delivery-section .delivery .delivery-contact .cont1 {
     margin-top: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .grid .row.delivery-section .delivery .delivery-contact .cont1 .call1 {
-    color: #989898;
   }
   .menu-section {
     position: relative;
@@ -1876,7 +1878,7 @@ footer .copyright .grid1 .copyright-2 span {
     padding: 4rem auto;
   }
   .menu-section .menu-img {
-    position: absolute;
+    position: static;
     top: -90px;
     margin: auto 8rem;
     margin-top: -4rem;
@@ -2006,6 +2008,29 @@ footer .copyright .grid1 .copyright-2 span {
   .hero-slider .slideshow-container .prev {
     left: 60px;
   }
+  footer .container .footer-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .copyright .grid1 {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer .copyright .grid1 .copyright-2 span {
+    color: #2680eb;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -2029,6 +2054,10 @@ footer .copyright .grid1 .copyright-2 span {
   .hero-slider .slideshow-container .prev {
     left: 30px;
     padding: 5px;
+  }
+  footer .container .footer-section {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 

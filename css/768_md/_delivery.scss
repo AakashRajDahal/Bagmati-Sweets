@@ -4,8 +4,7 @@
     .delivery {
       display: grid;
       margin: 1fr;
-      // grid-template-rows: 400px auto;
-      grid-column-gap: 2rem;
+      grid-gap: 2rem 0;
       .delivery-img {
         grid-column: 1/-1;
         img {
@@ -14,12 +13,13 @@
       }
       .delivery-contact {
         grid-column: 1/-1;
+        display: flex;
+        margin: auto 3rem;
+        flex-direction: column;
         .cont1 {
           margin-top: 3rem;
-          justify-content: center;
-          .call1 {
-            color: $textColor1;
-          }
+          // justify-content: flex-start;
+          // align-items: center;
         }
       }
     }

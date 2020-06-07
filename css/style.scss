@@ -43,10 +43,12 @@ body {
   @import "768_md/delivery";
   @import "768_md/menu";
   @import "768_md/hero-slider";
+  @import "768_md/footer";
 
 }
 @media only screen and (max-width: 576px) {
   @import "576_sm/hero-slider";
+  @import "576_sm/footer";
 
 }
 @media only screen and (max-width: 425px) {

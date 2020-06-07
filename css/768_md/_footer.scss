@@ -1,0 +1,70 @@
+footer {
+    margin-top: 4rem;
+    background-color: $light02;
+    color: $textColor1;
+    .container {
+        .footer-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+            padding-bottom: 45px;
+            padding-top: 45px;
+            .quick-links {
+                h5 {
+                    font-weight: 600;
+                    margin: 15px auto;
+                    font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                }
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        a {
+                            text-transform: capitalize;
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: $textColor1;
+                            line-height: 24px;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .more-links {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                #myBtn {
+                    height: 40px;
+                    width: 40px;
+                    border: 3px solid $textColor;
+                    .fas {
+                        color: $textColor;
+                    }
+                }
+            }
+        }
+    } //container ends here
+    .copyright {
+        background-color: #070707;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .grid1 {
+            margin: auto 140px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            .copyright-2 {
+                span {
+                    color: #2680eb;
+                }
+            }
+        }
+    }
+}

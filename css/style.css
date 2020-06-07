@@ -2166,4 +2166,22 @@ footer .copyright .grid1 .copyright-2 span {
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .row {
+    margin: 0 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .row {
+    margin: 0 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

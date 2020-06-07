@@ -48,12 +48,13 @@ body {
 }
 @media only screen and (max-width: 576px) {
   @import "576_sm/hero-slider";
+  @import "576_sm/menu";
   @import "576_sm/footer";
 
 }
-@media only screen and (max-width: 425px) {
-  @import "375_col/menu";
-}
+// @media only screen and (max-width: 425px) {
+//   @import "375_col/menu";
+// }
 @media only screen and (max-width: 375px) {
   @import "375_col/hero-slider";
 }

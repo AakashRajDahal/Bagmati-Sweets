@@ -1,20 +1,19 @@
 .menu-section {
-  position: relative;
-  margin: 4rem auto;
-  padding: 4rem auto;
   .menu-img {
     top: -90px;
-    margin: auto 8rem;
+    margin: auto 2rem;
     margin-top: -4rem;
-    padding: 4rem 3rem;
-    grid-row-gap: 4rem;
+    padding: 2rem 1rem;
+    grid-row-gap: 1rem;
     .menu1 {
-     grid-column: 1/-1;
-      grid-row-gap: 2rem;
-
+      grid-column: 1/-1;
+      grid-row-gap: 0.2rem;
+      align-items: center;
+      img{
+        height: 50px;
+      }
     }
   }
-
     h2 {
       padding-top: 24rem;
     }
@@ -23,7 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 2rem 3rem;
+      margin: 2rem 4rem;
       .tab {
         .grid {
           .tablinks {
@@ -38,7 +37,7 @@
   }
   #menu-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 120px 120px 120px 120px;
     grid-gap: 2rem 4rem;
     padding: 2rem 4rem;

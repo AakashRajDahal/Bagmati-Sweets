@@ -1757,6 +1757,48 @@ footer .copyright .grid1 .copyright-2 span {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 400px;
+    margin: 4rem;
+    text-align: center;
+  }
+  .modal-wrapper {
+    width: 400px;
+  }
+  .modal-img img {
+    grid-column: 1/-1;
+  }
+  .modal-contents {
+    grid-column: 1/-1;
+  }
+  .modal-contents .content1 {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 400px;
+    margin: 2rem;
+    text-align: center;
+  }
+  .modal-wrapper {
+    width: 400px;
+    left: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 300px;
+  }
+  .modal-wrapper {
+    max-width: 300px;
+    left: 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .mainHeader {
     height: 80px;

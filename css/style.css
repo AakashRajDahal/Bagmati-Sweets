@@ -1306,6 +1306,10 @@ section.mainHeader nav.topNav ul.side1 {
       grid-template-columns: 1fr 1.5fr;
 }
 
+.menu-section .menu-img-main .menu-img .menu1 img {
+  height: 80%;
+}
+
 .menu-section .menu-img-main .menu-img .menu1 div p {
   margin: 1rem auto;
 }

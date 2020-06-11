@@ -26,7 +26,7 @@
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         img{
-          height: 80%;
+          height: 100px;
         }
         div p{
           margin: 1rem auto;
@@ -51,6 +51,7 @@
             background-color: transparent;
             margin: 1rem;
             font-size: 24px;
+            cursor: pointer;
           }
           .active,
           .tablinks:hover {

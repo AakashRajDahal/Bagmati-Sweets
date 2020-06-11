@@ -1307,7 +1307,7 @@ section.mainHeader nav.topNav ul.side1 {
 }
 
 .menu-section .menu-img-main .menu-img .menu1 img {
-  height: 80%;
+  height: 100px;
 }
 
 .menu-section .menu-img-main .menu-img .menu1 div p {
@@ -1337,6 +1337,7 @@ section.mainHeader nav.topNav ul.side1 {
   background-color: transparent;
   margin: 1rem;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .menu-section .side-table .main-table .tab .grid .active,

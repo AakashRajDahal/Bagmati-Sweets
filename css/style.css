@@ -300,8 +300,8 @@ body {
 
 .mainHeader .topNav {
   margin: 0 140px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #cbcbcb;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,6 +331,8 @@ body {
 /* Navbar section */
 section.mainHeader {
   background-color: #000;
+  -webkit-box-shadow: 0px 5px 15px #333;
+          box-shadow: 0px 5px 15px #333;
 }
 
 section.mainHeader nav.topNav {
@@ -402,10 +404,15 @@ section.mainHeader nav.topNav ul.side1 {
   border: none;
   background-color: #fd5f00;
   color: white;
-  text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  font-family: Cera Pro;
+  text-transform: uppercase;
+  color: #000;
+  -webkit-box-shadow: 0px 15px 50px 1px rgba(253, 95, 0, 0.25);
+          box-shadow: 0px 15px 50px 1px rgba(253, 95, 0, 0.25);
+  font-weight: 600;
 }
 
 .nav div.main_list ul li a button:hover {
@@ -718,6 +725,8 @@ section.mainHeader nav.topNav ul.side1 {
 /* Navbar section */
 section.mainHeader {
   background-color: #000;
+  -webkit-box-shadow: 0px 5px 15px #333;
+          box-shadow: 0px 5px 15px #333;
 }
 
 section.mainHeader nav.topNav {
@@ -789,10 +798,15 @@ section.mainHeader nav.topNav ul.side1 {
   border: none;
   background-color: #fd5f00;
   color: white;
-  text-transform: uppercase;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: pointer;
+  font-family: Cera Pro;
+  text-transform: uppercase;
+  color: #000;
+  -webkit-box-shadow: 0px 15px 50px 1px rgba(253, 95, 0, 0.25);
+          box-shadow: 0px 15px 50px 1px rgba(253, 95, 0, 0.25);
+  font-weight: 600;
 }
 
 .nav div.main_list ul li a button:hover {
@@ -1132,12 +1146,14 @@ section.mainHeader nav.topNav ul.side1 {
 }
 
 .hero-slider .slideshow-container .mySlides .text h6 {
-  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
 .hero-slider .slideshow-container .mySlides img {
   width: 100%;
-  height: 650px;
+  height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1493,7 +1509,7 @@ footer .container .footer-section {
 footer .container .footer-section .quick-links h5 {
   font-weight: 600;
   margin: 15px auto;
-  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cera Pro", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer .container .footer-section .quick-links ul {
@@ -1527,6 +1543,7 @@ footer .container .footer-section .more-links {
 }
 
 footer .container .footer-section .more-links #myBtn {
+  cursor: pointer;
   height: 40px;
   width: 40px;
   border: 3px solid #707070;
